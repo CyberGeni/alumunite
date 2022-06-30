@@ -1,0 +1,12 @@
+/* main background: #f7fbfe */
+/* accent color: #0084e3 */
+/* secondary accent color: #ebf5fd */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

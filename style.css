@@ -49,8 +49,11 @@ li {
     font-size: 14px;
 }
 li:last-child{
-    align-items: baseline;
+    align-items: start;
     margin-left: 0.7em;
+}
+li:last-child img{
+    margin-right: 0.7em;
 }
 li h5 {
     margin: 0.7em 0;
@@ -102,6 +105,12 @@ select {
     padding: 0.7em;
     margin: 0.8em 0;
 }
+select:focus {
+    outline: 1px solid #ccc;
+}
+select::-ms-expand {
+    -webkit-appearance: none;
+}
 main h1 {
     color: black;
 }
@@ -150,13 +159,45 @@ button {
     font-weight: 600;
 }
 
-@media screen and (max-width: 512px) {
+@media screen and (max-width: 640px) {
     body {
         display: flex;
         flex-direction: column;
     }
     nav {
         width: 100%;
+        max-width: unset;
+    }
+    .nav-image {
+        max-width: 20em;
+    }
+    ul {
+        display: flex;
+        align-items: start;
+        border-top: 2px solid #dadadad2;
+    }
+    ul li {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+        margin: 0.5em 2em;
+    }
+    ul li::before {
+        content: '';
+        position: absolute;
+        top: -0.8em;
+        width: 8px;
+        height: 8px;
+        background-color: #a1a1a1c9;
+        border-radius: 50%;
+    }
+    li:last-child{
+        align-items: center;
+        text-align: center;
+    }
+    li:last-child img{
+        margin-left: 0.7em;
     }
     form {
         margin: 2em auto;
@@ -165,16 +206,20 @@ button {
         font-size: 12px;
     }
 }
-@media screen and (min-width: 512px) and (max-width: 768px) {
+@media screen and (min-width: 640px) and (max-width: 920px) {
     body {
         display: flex;
-        flex-direction: column;
+        flex-direction: row
     }
     nav {
-        width: 100%;
+        width: 40%;
+        padding: 2em;
+    }
+    ul {
+        margin: 1em 0.2em;
     }
     form {
-        margin: 2em auto;
+        margin: 8em auto;
     }
     .add-to-list {
         font-size: 12px;

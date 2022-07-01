@@ -92,6 +92,7 @@ form {
 input, select {
     width: 100%;
     border: 2px solid #f1f1f1;
+    background-color: white;
     border-radius: 6px;
     padding: 0.7em;
     margin: 0.8em 0;
@@ -169,6 +170,7 @@ button {
     ul {
         display: flex;
         align-items: start;
+        justify-content: start;
         border-top: 2px solid #dadadad2;
     }
     ul li {
@@ -193,6 +195,9 @@ button {
     }
     li:last-child img{
         margin-left: 0.7em;
+    }
+    li:last-child p {
+        display: none;
     }
     form {
         margin: 2em auto;

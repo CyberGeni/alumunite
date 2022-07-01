@@ -2,13 +2,13 @@
 /* accent color: #0084e3 */
 /* secondary accent color: #ebf5fd */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Noto Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Manrope', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #646464d2;
 }
 body {
@@ -56,6 +56,8 @@ li:last-child img{
     margin-right: 0.7em;
 }
 li h5 {
+    font-weight: 800;
+    color: #444444ef;
     margin: 0.7em 0;
 }
 li:first-child h5 {
@@ -87,7 +89,7 @@ form {
     max-width: 450px;
     margin: 8em 10em;
 }
-input {
+input, select {
     width: 100%;
     border: 2px solid #f1f1f1;
     border-radius: 6px;
@@ -98,14 +100,7 @@ input[type=radio] {
     width: fit-content;
     margin-bottom: 1.6em;
 }
-select {
-    width: 100%;
-    border: 2px solid #f1f1f1;
-    border-radius: 6px;
-    padding: 0.7em;
-    margin: 0.8em 0;
-}
-select:focus {
+input:focus, select:focus {
     outline: 1px solid #ccc;
 }
 select::-ms-expand {

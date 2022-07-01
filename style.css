@@ -141,7 +141,13 @@ h4 span {
     height: fit-content;
     margin-right: 8px;
 }
-
+.add-school .add-school-button {
+    border-radius: 50%;
+    transition: 50ms ease all;
+}
+.add-school .add-school-button:hover {
+    outline: 4px solid #006bb848;
+}
 button {
     background-color: #0084e3;
     border: none;
@@ -153,8 +159,12 @@ button {
     padding: 1em 3em;
     border-radius: 6px;
     font-weight: 600;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
 }
+button:hover {
+    background-color: #0073b1;
 
+}
 @media screen and (max-width: 640px) {
     body {
         display: flex;
